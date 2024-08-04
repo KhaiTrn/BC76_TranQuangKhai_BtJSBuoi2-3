@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Bài tập DOM</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="shortcut icon" href="./img/JSlogo.png" type="image/x-icon" />
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- (Optional) Use CSS or JS implementation -->
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -18,9 +29,9 @@
     />
   </head>
 
-  <body>
+  <body class="bg-body-secondary">
     <div class="container">
-      <h1 class="text-center">BÀI TẬP CHÍNH BUỔI 2-3</h1>
+      <h1 class="text-center my-4">BÀI TẬP CHÍNH BUỔI 2-3</h1>
       <div class="d-flex align-items-start">
         <div
           class="nav flex-column nav-pills me-3"
@@ -98,9 +109,10 @@
             tabindex="0"
           >
             <div class="Baitap1">
-              <h2>Tính tiền lương nhân viên</h2>
               <div class="mb-3">
-                <label for="" class="form-label"></label>
+                <label for="" class="form-label"
+                  ><h2 class="mb-3">Tính tiền lương nhân viên</h2></label
+                >
                 <input
                   type="number"
                   class="form-control"
@@ -122,10 +134,9 @@
                 />
               </div>
               <button class="btn btn-primary" id="tinhLuong">Tính lương</button>
-              <div
-                class="ketQua mt-3"
-                style="background-color: aquamarine"
-              ></div>
+              <div class="ketQua mt-3 alert alert-success">
+                <i class="fa-regular fa-hand-point-right"></i>
+              </div>
             </div>
           </div>
           <div
@@ -136,9 +147,10 @@
             tabindex="0"
           >
             <div class="Baitap2">
-              <h2>Tính giá trị trung bình</h2>
               <div class="mb-3">
-                <label for="" class="form-label"></label>
+                <label for="" class="form-label"
+                  ><h2 class="mb-3">Tính giá trị trung bình</h2></label
+                >
                 <input
                   type="number"
                   class="form-control"
@@ -194,7 +206,9 @@
                 <button class="btn tinhTrungBinh btn-primary mt-3">
                   Tính trung bình
                 </button>
-                <div class="ketQua2 mt-4"></div>
+                <div class="ketQua2 mt-4 alert alert-success">
+                  <i class="fa-regular fa-hand-point-right"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -207,7 +221,9 @@
           >
             <div class="Baitap3">
               <div class="mb-3">
-                <label for="" class="form-label">Name</label>
+                <label for="" class="form-label"
+                  ><h2 class="mb-3">Quy đổi tiền Tệ</h2></label
+                >
                 <input
                   type="number"
                   class="form-control"
@@ -220,7 +236,9 @@
               <button class="btn doiTienTe btn-primary mt-3">
                 Quy đổi tiền
               </button>
-              <div class="ketQua3 mt-4"></div>
+              <div class="ketQua3 mt-4 alert alert-success">
+                <i class="fa-regular fa-hand-point-right"></i>
+              </div>
             </div>
           </div>
           <div
@@ -230,9 +248,14 @@
             aria-labelledby="v-pills-messages-tab"
             tabindex="0"
           >
-            <div class="container Baitap4">
+            <div class="Baitap4">
               <div class="mb-3">
-                <label for="" class="form-label"></label>
+                <label for="" class="form-label"
+                  ><h2 class="mb-3">
+                    Tính diện tích, chu vi <br />
+                    hình chữ nhật
+                  </h2></label
+                >
                 <input
                   type="number"
                   class="form-control"
@@ -254,7 +277,9 @@
                 />
               </div>
               <button class="btn tinhDienTich btn-primary mt-3">Tính</button>
-              <div class="ketQua4 mt-4"></div>
+              <div class="ketQua4 mt-4 alert alert-success">
+                <i class="fa-regular fa-hand-point-right"></i>
+              </div>
             </div>
           </div>
           <div
@@ -264,7 +289,25 @@
             aria-labelledby="v-pills-settings-tab"
             tabindex="0"
           >
-            ...
+            <div class="Baitap5">
+              <div class="mb-3">
+                <label for="" class="form-label"
+                  ><h2 class="mb-3">Tính tổng 2 ký số</h2></label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  name=""
+                  id="nhapSo"
+                  aria-describedby="helpId"
+                  placeholder="Vui lòng nhập số có 2 chữ số"
+                />
+              </div>
+              <button class="btn tinhTong btn-primary mt-3">Tính tổng</button>
+              <div class="ketQua5 mt-4 alert alert-success">
+                <i class="fa-regular fa-hand-point-right"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
