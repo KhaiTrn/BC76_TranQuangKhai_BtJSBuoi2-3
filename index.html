@@ -19,14 +19,256 @@
   </head>
 
   <body>
-    <header>
-      <!-- place navbar here -->
-    </header>
-    <main></main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
+    <div class="container">
+      <h1 class="text-center">BÀI TẬP CHÍNH BUỔI 2-3</h1>
+      <div class="d-flex align-items-start">
+        <div
+          class="nav flex-column nav-pills me-3"
+          id="v-pills-tab"
+          role="tablist"
+          aria-orientation="vertical"
+        >
+          <button
+            class="nav-link active"
+            id="v-pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-home"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-home"
+            aria-selected="true"
+          >
+            Bài 1
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-profile"
+            aria-selected="false"
+          >
+            Bài 2
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-disabled-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-disabled"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-disabled"
+            aria-selected="false"
+          >
+            bài 3
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-messages-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-messages"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-messages"
+            aria-selected="false"
+          >
+            Bài 4
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-settings-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-settings"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-settings"
+            aria-selected="false"
+          >
+            Bài 5
+          </button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="v-pills-home"
+            role="tabpanel"
+            aria-labelledby="v-pills-home-tab"
+            tabindex="0"
+          >
+            <div class="Baitap1">
+              <h2>Tính tiền lương nhân viên</h2>
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name=""
+                  id="luongMotNgay"
+                  aria-describedby="helpId"
+                  placeholder="Nhập lương 1 ngày"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name=""
+                  id="soNgayLam"
+                  aria-describedby="helpId"
+                  placeholder="Nhập số ngày làm"
+                />
+              </div>
+              <button class="btn btn-primary" id="tinhLuong">Tính lương</button>
+              <div
+                class="ketQua mt-3"
+                style="background-color: aquamarine"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-profile"
+            role="tabpanel"
+            aria-labelledby="v-pills-profile-tab"
+            tabindex="0"
+          >
+            <div class="Baitap2">
+              <h2>Tính giá trị trung bình</h2>
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name=""
+                  id="nhapSo1"
+                  aria-describedby="helpId"
+                  placeholder="Nhập số thứ 1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name=""
+                  id="nhapSo2"
+                  aria-describedby="helpId"
+                  placeholder="Nhập số thứ 2"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name=""
+                  id="nhapSo3"
+                  aria-describedby="helpId"
+                  placeholder="Nhập số thứ 3"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name=""
+                  id="nhapSo4"
+                  aria-describedby="helpId"
+                  placeholder="Nhập số thứ 4"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name=""
+                  id="nhapSo5"
+                  aria-describedby="helpId"
+                  placeholder="Nhập số thứ 5"
+                />
+                <button class="btn tinhTrungBinh btn-primary mt-3">
+                  Tính trung bình
+                </button>
+                <div class="ketQua2 mt-4"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-disabled"
+            role="tabpanel"
+            aria-labelledby="v-pills-disabled-tab"
+            tabindex="0"
+          >
+            <div class="Baitap3">
+              <div class="mb-3">
+                <label for="" class="form-label">Name</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name=""
+                  id="USD"
+                  aria-describedby="helpId"
+                  placeholder="Nhập số tiền USD"
+                />
+              </div>
+              <button class="btn doiTienTe btn-primary mt-3">
+                Quy đổi tiền
+              </button>
+              <div class="ketQua3 mt-4"></div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-messages"
+            role="tabpanel"
+            aria-labelledby="v-pills-messages-tab"
+            tabindex="0"
+          >
+            <div class="container Baitap4">
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name=""
+                  id="chieuDai"
+                  aria-describedby="helpId"
+                  placeholder="Nhập chiều dài"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <input
+                  type="number"
+                  class="form-control"
+                  name=""
+                  id="chieuRong"
+                  aria-describedby="helpId"
+                  placeholder="Nhập chiều Rộng"
+                />
+              </div>
+              <button class="btn tinhDienTich btn-primary mt-3">Tính</button>
+              <div class="ketQua4 mt-4"></div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-settings"
+            role="tabpanel"
+            aria-labelledby="v-pills-settings-tab"
+            tabindex="0"
+          >
+            ...
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -38,5 +280,6 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script src="./JS/index.js"></script>
   </body>
 </html>
