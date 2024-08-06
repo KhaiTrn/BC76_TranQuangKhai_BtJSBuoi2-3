@@ -6,7 +6,7 @@ document.getElementById("tinhLuong").onclick = function () {
   tongLuong = luongMotNgay * soNgayLam;
   document.querySelector(
     ".ketQua"
-  ).innerHTML = `<p class ="mb-0"><i class="fa-regular fa-hand-point-right"></i>${tongLuong}</p>`;
+  ).innerHTML = `<p class ="mb-0"><i class="fa-regular fa-hand-point-right"></i> Lương của bạn là ${tongLuong}</p>`;
 };
 // Bài tập 2
 document.querySelector(".tinhTrungBinh").onclick = function () {
@@ -19,7 +19,7 @@ document.querySelector(".tinhTrungBinh").onclick = function () {
   soTrungBinh = (soThuNhat + soThuHai + soThuBa + soThuTu + soThuNam) / 5;
   document.querySelector(
     ".ketQua2"
-  ).innerHTML = `<p class ="mb-0"><i class="fa-regular fa-hand-point-right"></i>${soTrungBinh}</p>`;
+  ).innerHTML = `<p class ="mb-0"><i class="fa-regular fa-hand-point-right"></i> ${soTrungBinh}</p>`;
 };
 // Bài tập 3
 document.querySelector(".doiTienTe").onclick = function () {
@@ -51,7 +51,7 @@ document.querySelector(".tinhDienTich").onclick = function () {
 // Bài tập 5
 document.querySelector(".tinhTong").onclick = function () {
   const nhapSo = document.getElementById("nhapSo").value * 1;
-  if (nhapSo < -99 || nhapSo > 99) {
+  if (nhapSo > 99) {
     document.querySelector(
       ".ketQua5"
     ).innerHTML = `<p class ="mb-0"><i class="fa-regular fa-hand-point-right"></i> xin hãy nhập số có 2 chữ số</p>`;
@@ -63,6 +63,6 @@ document.querySelector(".tinhTong").onclick = function () {
     tongHaiKySo = soHangChuc + soHangDonVi;
     document.querySelector(
       ".ketQua5"
-    ).innerHTML = `<p class ="mb-0"><i class="fa-regular fa-hand-point-right"></i>${tongHaiKySo}</p>`;
+    ).innerHTML = `<p class ="mb-0"><i class="fa-regular fa-hand-point-right"></i> ${tongHaiKySo}</p>`;
   }
 };
